@@ -1,0 +1,192 @@
+:root {
+  --text-secondary-color: #808080;
+  --padding: 60px;
+  --container-bkg: #2F2F2F;
+  --app-bkg: #57D9DB;
+  --title-size: 50px;
+  --text-size: 30px;
+}
+
+@font-face {
+  font-family: storeFont;
+  src: url(Poppins-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: storeFont;
+  background-color: black;
+  padding: var(--padding);
+}
+
+.app-background {
+  width: 100%;
+  height: calc(100% + (var(--padding)*2));
+  margin-top: -60px;
+  margin-left: 60px;
+  -webkit-clip-path: polygon(75% 0, 100% 0, 100% 100%, 50% 100%);
+          clip-path: polygon(75% 0, 100% 0, 100% 100%, 50% 100%);
+  background-color: var(--app-bkg);
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: calc(var(--padding) - 100vh);
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: var(--container-bkg);
+  border-radius: 20px;
+}
+
+.landing-bkg {
+  width: 50%;
+  height: 100;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url(jqoytfh994q51.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+  position: relative;
+  z-index: 5;
+}
+
+.landing-page {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  position: relative;
+  margin-left: -50%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.landing-page img {
+  width: 200px;
+  height: 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.landing-text {
+  width: auto;
+  height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 200px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.landing-text h1 {
+  font-size: var(--title-size);
+}
+
+.landing-text p {
+  font-size: var(--text-size);
+}
+
+.side-panel {
+  width: 50%;
+  height: 100%;
+  padding: 80px;
+  color: var(--text-secondary-color);
+}
+
+.signup-section {
+  width: 100%;
+  height: inherit;
+}
+
+.signup-section form {
+  width: 100%;
+  height: 100%;
+}
+
+.formField {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formField p {
+  color: red;
+  font-size: 13px;
+}
+
+.form-input {
+  width: 100%;
+  height: 7%;
+  border: none;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: var(--text-secondary-color);
+}
+
+.form-input:-ms-input-placeholder {
+  color: var(--text-secondary-color);
+}
+
+.form-input::-ms-input-placeholder {
+  color: var(--text-secondary-color);
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary-color);
+}
+
+#form-signup {
+  width: 50%;
+  height: 50px;
+  margin-top: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 20px;
+  border: none;
+  background-color: #57D9DB;
+  font-size: 18px;
+  color: white;
+}
+/*# sourceMappingURL=App.css.map */
